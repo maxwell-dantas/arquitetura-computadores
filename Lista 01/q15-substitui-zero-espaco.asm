@@ -34,29 +34,29 @@ main:
 	
 	# Verifica o sinal do quarto algarismo
 	sub $14, $0, $10
-	srl $14, $14, 31
-	mul $14, $14, 16 # verifica se o sinal vai ser 0 ou 1
+	srl $14, $14, 31 # verifica se o sinal vai ser 0 ou 1
+	sll $14, $14, 4 # mulitplica o sinal por 16
 	addi $10, $10, 32 # número base + 32
 	add $10, $10, $14 # (número base + 32) + 16 ou 0
 	
 	# Verifica o sinal do terceiro algarismo
 	sub $14, $0, $11
 	srl $14, $14, 31
-	mul $14, $14, 16
+	sll $14, $14, 4
 	addi $11, $11, 32
 	add $11, $11, $14
 	
 	# Verifica o sinal do segundo algarismo
 	sub $14, $0, $12
 	srl $14, $14, 31
-	mul $14, $14, 16
+	sll $14, $14, 4
 	addi $12, $12, 32
 	add $12, $12, $14
 	
 	# Verifica o sinal do primeiro algarismo
 	sub $14, $0, $13
 	srl $14, $14, 31
-	mul $14, $14, 16
+	sll $14, $14, 4
 	addi $13, $13, 32
 	add $13, $13, $14
 	
