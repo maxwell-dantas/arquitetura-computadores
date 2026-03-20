@@ -1,7 +1,9 @@
 # QUESTÃO 01
 # Num experimento científico a temperatura precisa estar em uma faixa de valores para ser considerado válido. 
 # Faça um programa em Assembly do MIPS que receba três números, min, max e temp. 
-# O primeiro e o segundo representam os limites mínimo e máximo de um intervalo de temperaturas. temp representa a temperatura atual. O programa vai imprimir 1 se o valor de temp estiver fora do intervalo entre min e max. Caso contrário ele vai imprimir o valor 0. Considere que o usuário vai sempre digitar min sendo menor que max.
+# O primeiro e o segundo representam os limites mínimo e máximo de um intervalo de temperaturas. 
+# temp representa a temperatura atual. O programa vai imprimir 1 se o valor de temp estiver fora do intervalo entre min e max. 
+# Caso contrário ele vai imprimir o valor 0. Considere que o usuário vai sempre digitar min sendo menor que max.
 # Exemplos:
 # • min = 3, max = 7 e temp = 6. O programa vai imprimir 0
 # • min = 3, max = 7 e temp = 1. O programa vai imprimir 1
